@@ -15,6 +15,6 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "npm build",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
