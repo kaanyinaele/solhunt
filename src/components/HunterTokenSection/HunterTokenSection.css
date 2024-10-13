@@ -1,0 +1,39 @@
+.hunter-token-section {
+    background: linear-gradient(to bottom, #5e3bf3, #3a0798);
+    padding-top: 80px; /* Adjust as needed */
+}
+
+.section-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px; /* Adjust to match padding-top */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.hunter-tokens-container {
+    position: absolute;
+    top: -40px; /* Adjust to position tokens */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px; /* Adjust based on your image size */
+    height: 300px; /* Adjust based on your image size */
+    overflow: hidden;
+}
+
+.hunter-tokens {
+    width: 300%;
+    height: auto;
+    transform: translateY(40%); /* Adjust to show only part of the image */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(40%);
+    }
+    50% {
+        transform: translateY(35%);
+    }
+}
